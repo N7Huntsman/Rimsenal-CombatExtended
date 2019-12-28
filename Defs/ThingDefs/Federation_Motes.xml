@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="RSMoteBase">
+    <defName>Mote_BlastPlasma</defName>
+    <graphicData>
+     <texPath>Things/Mote/BlastPlasma</texPath> 
+     <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.2</solidTime>
+      <fadeInTime>0.12</fadeInTime>
+      <fadeOutTime>0.12</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="RSMoteBase">
+    <defName>Mote_BlastOptic</defName>
+    <graphicData> 
+     <texPath>Things/Mote/BlastOptic</texPath> 
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0</solidTime>
+      <fadeInTime>0.06</fadeInTime>
+      <fadeOutTime>0.08</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+</Defs>

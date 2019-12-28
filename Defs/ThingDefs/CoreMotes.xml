@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <thingDef Name="RSMoteBase" Abstract="True">
+    <thingClass>MoteThrown</thingClass>
+    <label>Mote</label>
+    <category>Mote</category>
+    <graphicData>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>false</useHitPoints>
+    <isSaveable>false</isSaveable>
+    <rotatable>false</rotatable>
+  </thingDef>
+
+  <thingDef ParentName="RSMoteBase">
+    <defName>Mote_BlastMicrowave</defName>
+    <graphicData>
+      <texPath>Things/Mote/BlastMicrowave</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <solidTime>0.1</solidTime>
+      <fadeInTime>0.06</fadeInTime>
+      <fadeOutTime>0.08</fadeOutTime>
+    </mote>
+  </thingDef>
+
+  <thingDef ParentName="RSMoteBase">
+    <defName>ImpactMote</defName>
+	<altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/ImpactMote</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <pathCost>75</pathCost>
+    <mote>
+      <solidTime>0.5</solidTime>
+      <fadeInTime>0.5</fadeInTime>
+      <fadeOutTime>2.7</fadeOutTime>
+    </mote>
+  </thingDef>
+  
+
+</Defs>

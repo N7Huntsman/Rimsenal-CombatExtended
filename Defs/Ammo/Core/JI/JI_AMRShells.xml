@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoAMRSlug</defName>
+		<label>Machined Alloy Slug</label>
+		<parent>AmmoRifles</parent>
+    <iconPath>Things/Ammo/JI/JI_AMR/AMRCartridge_c</iconPath>
+	</ThingCategoryDef>
+	
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_JI_AMR</defName>
+		<label>High-density alloy slug</label>
+		<ammoTypes>
+			<Ammo_JI_AMR>Bullet_JI_AMR</Ammo_JI_AMR>
+ 		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+	
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseJIAMR" ParentName="SmallAmmoBase" Abstract="True">
+		<description>Large, solid alloy slugs, heated and fired from Jotun Interstellar weapons in a semi-molten state at high velocity. This round, for the AMR, lacks a solid core, reducing its effectiveness against thick armor.</description>
+		<statBases>
+		<Mass>0.05</Mass>
+		<Bulk>0.1</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoAMRSlug</li>
+		</thingCategories>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseJIAMR">
+		<defName>Ammo_JI_AMR</defName>
+		<label>High-density alloy slug</label>
+		<graphicData>
+			<texPath>Things/Ammo/JI/JI_AMR</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>0.12</MarketValue>
+		</statBases>
+		<ammoClass>HDSlug</ammoClass>
+	</ThingDef>
+	
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseJIAMRBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Slug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>160</speed>
+			<dropsCasings>true</dropsCasings>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseJIAMRBullet">
+		<defName>Bullet_JI_AMR</defName>
+		<label>Machined alloy slug</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>25</damageAmountBase>
+				  <secondaryDamage>
+					<li>
+					  <def>Flame_Secondary</def>
+					  <amount>4</amount>
+					</li>
+				  </secondaryDamage>			
+			<armorPenetrationBlunt>50</armorPenetrationBlunt>
+			<armorPenetrationSharp>20</armorPenetrationSharp>
+		</projectile>
+	</ThingDef>
+	
+	
+</Defs>

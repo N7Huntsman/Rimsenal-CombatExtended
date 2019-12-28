@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseMicroWaveBullet" ParentName="BaseBullet" Abstract="true">
+		<graphicData>
+		  <texPath>Things/Projectile/Microwave</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+	</ThingDef>
+
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseMicroWaveBullet">
+		<defName>Bullet_GeugGwang_CE</defName>
+		<label>microwave</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Microwave</damageDef>
+			<speed>999</speed>
+			<dropsCasings>false</dropsCasings>		
+			<explosionRadius>1.5</explosionRadius>
+			<damageAmountBase>1</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<ai_IsIncendiary>true</ai_IsIncendiary>			
+		</projectile>
+	</ThingDef>
+	
+</Defs>

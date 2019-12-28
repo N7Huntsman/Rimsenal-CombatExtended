@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <SoundDef>
+    <defName>HissFlamethrowerFeral</defName>  
+    <sustain>false</sustain>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Misc/Hiss/HissSmall</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>15</min>        
+          <max>15</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.642391</min>        
+          <max>0.621195</max>
+        </pitchRange>   
+      </li>
+    </subSounds>
+  </SoundDef>
+
+	<SoundDef>
+		<defName>RS_ShotBoreas</defName>
+		<eventNames />   <context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Microwave</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RS_ShotSwarm</defName>
+		<eventNames />   <context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/Swarm</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.9152174</min>
+					<max>1.042391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+
+	<SoundDef>
+		<defName>ImpactL</defName>
+		<eventNames />   <context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Things/ImpactL</clipPath>
+					</li>
+				</grains>
+				<pitchRange>
+					<min>0.7152174</min>
+					<max>0.942391</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>
