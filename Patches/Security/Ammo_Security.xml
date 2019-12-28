@@ -1,0 +1,53 @@
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Rimsenal - Enhanced Vanilla Pack</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+		 <operations>		
+
+
+		<li Class="PatchOperationAdd">
+		<xpath>Defs</xpath>
+		<value>
+
+<!-- ==================== Recipe: Molten Shell ========================== -->
+  <RecipeDef ParentName="GrenadeRecipeBase">
+    <defName>MakeAmmo_MoltenShells</defName>
+    <label>make molten shells x5</label>
+    <description>Craft 5 molten shells.</description>
+    <jobString>Making molten shells.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+	<researchPrerequisite>MoltenTech</researchPrerequisite>
+	<recipeUsers Inherit="False">
+		<li>JITable</li>
+	</recipeUsers>			
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_MoltenShell>5</Ammo_MoltenShell>
+    </products>
+  </RecipeDef>
+
+
+		</value>
+		</li>
+
+		</operations>
+		</match>
+	</Operation>
+</Patch>
+			

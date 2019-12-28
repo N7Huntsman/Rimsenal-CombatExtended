@@ -1,0 +1,199 @@
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+    <mods>
+		<li>Rimsenal - Enhanced Vanilla Pack</li>
+    </mods>
+		<match Class="PatchOperationSequence">
+		 <operations>		
+
+		<!-- Patched in to prevent errors due to missing ThingDefs -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Club_Thrown"]/projectile</xpath>
+				<value>
+					<preExplosionSpawnChance>0.50</preExplosionSpawnChance>
+					<preExplosionSpawnThingDef>Gun_ThrowingClubs</preExplosionSpawnThingDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Axe_Thrown"]/projectile</xpath>
+				<value>
+					<preExplosionSpawnChance>0.80</preExplosionSpawnChance>
+					<preExplosionSpawnThingDef>Gun_ThrowingAxes</preExplosionSpawnThingDef>
+				</value>
+			</li>
+			
+		<!-- Enable Mechanoid Charge Ammo + Recipes -->
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[description="Mechanoid-built high-caliber charged shot ammo used in heavy weapons."]/tradeTags</xpath>
+				<value>
+					  <li>CE_AutoEnableTrade</li>
+					  <li>CE_AutoEnableCrafting</li>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[description="Mechanoid-built cartridge designed to split upon firing."]</xpath>
+				<value>
+					<tradeTags>
+						  <li>CE_AutoEnableTrade</li>
+						  <li>CE_AutoEnableCrafting</li>
+					</tradeTags>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+					<defName>MakeAmmo_12x64mmCharged</defName>
+					<label>make 12x64mm Charged cartridge x100</label>
+					<description>Craft 100 12x64mm Charged cartridges.</description>
+					<jobString>Making 12x64mm Charged cartridges.</jobString>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Plasteel</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>ComponentIndustrial</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>Plasteel</li>
+						<li>ComponentIndustrial</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Ammo_12x64mmCharged>100</Ammo_12x64mmCharged>
+					</products>
+					<workAmount>7700</workAmount>
+				  </RecipeDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+					<defName>MakeAmmo_15x65mmDiffusingCharged_Buck</defName>
+					<label>make 15x65mm Charged cartridge x100</label>
+					<description>Craft 100 15x65mm Charged cartridges.</description>
+					<jobString>Making 15x65mm Charged cartridges.</jobString>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Plasteel</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>ComponentIndustrial</li>
+						  </thingDefs>
+						</filter>
+						<count>2</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>Plasteel</li>
+						<li>ComponentIndustrial</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+					<products>
+					  <Ammo_15x65mmDiffusingCharged_Buck>100</Ammo_15x65mmDiffusingCharged_Buck>
+					</products>
+					<workAmount>7700</workAmount>
+				  </RecipeDef>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+					 <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+						<defName>MakeAmmo_Gun_ThrowingClub</defName>
+						<label>make throwing club x5</label>
+						<description>Craft 5 throwing clubs.</description>
+						<jobString>Making throwing clubs.</jobString>
+						<workAmount>400</workAmount>
+						<ingredients>
+						  <li>
+							<filter>
+							  <thingDefs>
+								<li>WoodLog</li>
+							  </thingDefs>
+							</filter>
+							<count>10</count>
+						  </li>
+						</ingredients>
+						<fixedIngredientFilter>
+						  <thingDefs>
+							<li>WoodLog</li>
+						  </thingDefs>
+						</fixedIngredientFilter>
+					   <recipeUsers>
+						 <li>CraftingSpot</li>
+					   </recipeUsers>		
+						<products>
+						  <Gun_ThrowingClubs>5</Gun_ThrowingClubs>
+						</products>
+					  </RecipeDef>
+			</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs</xpath>
+				<value>
+				 <RecipeDef ParentName="AmmoRecipeNeolithicBase">
+					<defName>MakeAmmo_Gun_ThrowingAxes</defName>
+					<label>make throwing axe x5</label>
+					<description>Craft 5 throwing axes.</description>
+					<jobString>Making throwing axes.</jobString>
+					<workAmount>900</workAmount>
+					<ingredients>
+					  <li>
+						<filter>
+						  <thingDefs>
+							<li>Steel</li>
+						  </thingDefs>
+						</filter>
+						<count>10</count>
+					  </li>
+					</ingredients>
+					<fixedIngredientFilter>
+					  <thingDefs>
+						<li>WoodLog</li>
+					  </thingDefs>
+					</fixedIngredientFilter>
+				   <recipeUsers>
+					 <li>ElectricSmithy</li>
+					 <li>FueledSmithy</li>
+				   </recipeUsers>		
+					<products>
+					  <Gun_ThrowingAxes>5</Gun_ThrowingAxes>
+					</products>
+				  </RecipeDef>
+			</value>	
+			</li>
+			
+		</operations>
+		</match>
+	</Operation>
+</Patch>
+			
