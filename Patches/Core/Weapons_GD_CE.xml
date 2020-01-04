@@ -617,11 +617,16 @@
 			</li>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/thingDef[defName="GD_BSLauncher" or
-				defName="GD_SKGrenadeLauncher" or
-				defName="GD_INGrenadeLauncher"
-				]</xpath>
-			</li>
+				<xpath>Defs/thingDef[defName="GD_BSLauncher"]</xpath>
+			</li>	
+				
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/thingDef[defName="GD_INGrenadeLauncher"]</xpath>
+			</li>	
+				
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/thingDef[defName="GD_SKGrenadeLauncher"]</xpath>
+			</li>	
 			
 		</operations>
 		</match>
