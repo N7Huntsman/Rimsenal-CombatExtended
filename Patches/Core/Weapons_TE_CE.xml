@@ -247,10 +247,10 @@
 					</comps>					
 				</value>
 			</li>
-			
+		
 			<!-- ==========  TE Kinetic Long Rifle  =========== -->
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/thingDef[defName="TE_ThuddGun"]/statBases</xpath>
+		<li Class="PatchOperationReplace">
+				<xpath>Defs/thingDef[defName="TE_KineticLongRifle"]/statBases</xpath>
 				<value>
 					<statBases>
 						<WorkToMake>46800</WorkToMake>
@@ -264,7 +264,7 @@
 				</value>
 			</li>				
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/thingDef[defName="TE_ThuddGun"]/verbs</xpath>
+				<xpath>Defs/thingDef[defName="TE_KineticLongRifle"]/verbs</xpath>
 				<value>
 					<verbs>
 						<li Class="CombatExtended.VerbPropertiesCE">					
@@ -282,8 +282,9 @@
 				</value>
 			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/thingDef[defName="TE_ThuddGun"]/comps</xpath>
+				<xpath>Defs/thingDef[defName="TE_KineticLongRifle"]</xpath>
 				<value>
+				<comps>
 					<li Class="CombatExtended.CompProperties_AmmoUser">				
 						<magazineSize>10</magazineSize>
 						<reloadTime>4</reloadTime>
@@ -291,10 +292,11 @@
 					</li>
 					<li Class="CombatExtended.CompProperties_FireModes">
 						<aiAimMode>AimedShot</aiAimMode>						
-					</li>										
+					</li>
+				</comps>	
 				</value>
 			</li>
-			
+		
 			<!-- ==========  TE Storm Cannon  =========== -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/thingDef[defName="TE_StormCannon"]/statBases</xpath>
@@ -349,7 +351,7 @@
 					</comps>					
 				</value>
 			</li>
-			
+		
 			<!-- ==========  TE Kinetic Lance  =========== -->
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/thingDef[defName="TE_KineticLance"]/statBases</xpath>

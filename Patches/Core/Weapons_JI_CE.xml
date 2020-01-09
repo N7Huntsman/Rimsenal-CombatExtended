@@ -222,7 +222,7 @@
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_JI_AMR</defaultProjectile>
 						<warmupTime>3.1</warmupTime>
-						<range>72</range>
+						<range>90</range>
 						<soundCast>RS_ShotJI</soundCast>
 						<soundCastTail>GunTail_Heavy</soundCastTail>
 						<muzzleFlashScale>12</muzzleFlashScale>
@@ -274,7 +274,7 @@
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_90mmJI_HEDP</defaultProjectile>
 						<warmupTime>3.8</warmupTime>
-						<range>68</range>
+						<range>88</range>
 						<soundCast>RS_ShotJI</soundCast>
 						<soundCastTail>GunTail_Heavy</soundCastTail>
 						<muzzleFlashScale>15</muzzleFlashScale>

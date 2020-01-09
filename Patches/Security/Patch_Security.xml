@@ -284,6 +284,10 @@
 			</li>
 	 
 			<!-- ========== Nest Missile ========== -->
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName = "NestMissile"]/inspectorTabs</xpath>
+			</li>
+			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 				<defName>Gun_NestMissile</defName>
 				<statBases>

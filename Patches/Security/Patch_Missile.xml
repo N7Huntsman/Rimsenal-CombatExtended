@@ -8,7 +8,11 @@
 		 <operations>
 
 			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Missile_HE" or defName="Missile_AP"]</xpath>
+				<xpath>Defs/ThingDef[defName="Missile_HE"]</xpath>
+			</li>
+
+			<li Class="PatchOperationRemove">
+				<xpath>Defs/ThingDef[defName="Missile_AP"]</xpath>
 			</li>
 
 		</operations>

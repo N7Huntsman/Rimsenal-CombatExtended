@@ -245,9 +245,6 @@
 					<li>CE_AI_Rifle</li>
 				</weaponTags>
 			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Gun_RSAMRifle"]/equippedStatOffsets</xpath>
-			</li>
 			
 			<!-- ========== Automatic Rfile =========== -->
 			
@@ -292,9 +289,6 @@
 				<weaponTags>
 					<li>Tag</li>
 				</weaponTags>
-			</li>
-			<li Class="PatchOperationRemove">
-				<xpath>Defs/ThingDef[defName="Gun_AutomaticRifle"]/equippedStatOffsets</xpath>
 			</li>
 			
 			<!-- ========== Repeater =========== -->
