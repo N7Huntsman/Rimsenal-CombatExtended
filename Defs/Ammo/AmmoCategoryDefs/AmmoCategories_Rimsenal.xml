@@ -56,5 +56,12 @@
 		<labelShort>MS</labelShort>
 		<description>An alloy shell heated nearly to the melting point.</description>
   </CombatExtended.AmmoCategoryDef>
+
+  <CombatExtended.AmmoCategoryDef>
+		<defName>Smoke</defName>
+		<label>smoke</label>
+		<labelShort>SMK</labelShort>
+		<description>A pyrotechnic device the produces heavy smoke, useful for signaling or creating concealment.</description>
+  </CombatExtended.AmmoCategoryDef>
   
 </Defs>

@@ -58,7 +58,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Shredder</damageDef>
-			<speed>180</speed>
+			<speed>72</speed>
 			<dropsCasings>false</dropsCasings>
 		</projectile>
 	</ThingDef>

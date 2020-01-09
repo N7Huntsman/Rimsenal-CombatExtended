@@ -41,7 +41,6 @@
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="RPG7GrenadeBase">
     <defName>Missile_ATGM_HE</defName>
     <label>Anti-tank guided missile (HE)</label>
-	<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>	
     <graphicData>
       <texPath>Things/Item/Missile_HE</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -98,6 +97,7 @@
     <graphicData>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
+	<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>		
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <speed>64</speed>
       <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
@@ -161,91 +161,5 @@
 		</comps>
 	</ThingDef>
 
-	<!-- ================== Recipes ================== -->
-		<RecipeDef ParentName="ChargeAmmoRecipeBase">
-			<defName>MakeMissile_ATGM_HE</defName>
-			<label>make HE anti-tank guided missile x5</label>
-			<description>Craft 5 12x64mm Grey Dale anti-tank guided missiles with high explosive warheads.</description>
-			<jobString>Making 5 HE ATGMs.</jobString>
-			<ingredients>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>Steel</li>
-				  </thingDefs>
-				</filter>
-				<count>50</count>
-			  </li>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>ComponentIndustrial</li>
-				  </thingDefs>
-				</filter>
-				<count>5</count>
-			  </li>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>FSX</li>
-				  </thingDefs>
-				</filter>
-				<count>8</count>
-			  </li>			  
-			</ingredients>
-			<fixedIngredientFilter>
-			  <thingDefs>
-				<li>Steel</li>
-				<li>ComponentIndustrial</li>
-				<li>FSX</li>				
-			  </thingDefs>
-			</fixedIngredientFilter>
-			<products>
-			  <Missile_ATGM_HE>5</Missile_ATGM_HE>
-			</products>
-		</RecipeDef>
-
-		<RecipeDef ParentName="ChargeAmmoRecipeBase">
-			<defName>MakeMissile_ATGM_AP</defName>
-			<label>make HEAT anti-tank guided missile x5</label>
-			<description>Craft 5 12x64mm Grey Dale anti-tank guided missiles with high explosive anti-tank warheads.</description>
-			<jobString>Making 5 HEAT ATGMs.</jobString>
-			<ingredients>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>Steel</li>
-				  </thingDefs>
-				</filter>
-				<count>70</count>
-			  </li>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>ComponentIndustrial</li>
-				  </thingDefs>
-				</filter>
-				<count>5</count>
-			  </li>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>FSX</li>
-				  </thingDefs>
-				</filter>
-				<count>5</count>
-			  </li>			  
-			</ingredients>
-			<fixedIngredientFilter>
-			  <thingDefs>
-				<li>Steel</li>
-				<li>ComponentIndustrial</li>
-				<li>FSX</li>				
-			  </thingDefs>
-			</fixedIngredientFilter>
-			<products>
-			  <Missile_ATGM_AP>5</Missile_ATGM_AP>
-			</products>
-		</RecipeDef>
 
 </Defs>

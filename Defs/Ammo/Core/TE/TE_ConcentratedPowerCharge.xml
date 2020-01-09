@@ -57,7 +57,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Crush</damageDef>
-			<speed>210</speed>
+			<speed>88</speed>
 			<dropsCasings>false</dropsCasings>
 		</projectile>
 	</ThingDef>

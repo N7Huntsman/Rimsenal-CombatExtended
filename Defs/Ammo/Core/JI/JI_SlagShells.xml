@@ -57,7 +57,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>Bullet</damageDef>
-			<speed>80</speed>
+			<speed>32</speed>
 			<dropsCasings>true</dropsCasings>
 		</projectile>
 	</ThingDef>

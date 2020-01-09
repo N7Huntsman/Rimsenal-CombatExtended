@@ -57,7 +57,7 @@
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageDef>KineticImpact</damageDef>
-			<speed>300</speed>
+			<speed>120</speed>
 			<dropsCasings>false</dropsCasings>
 		</projectile>
 	</ThingDef>
