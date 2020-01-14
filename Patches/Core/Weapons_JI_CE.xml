@@ -350,7 +350,7 @@
 						<li Class="CombatExtended.CompProperties_AmmoUser">				
 							<magazineSize>36</magazineSize>
 							<reloadTime>4</reloadTime>
-							<ammoSet>Ammo_JI_Molten</ammoSet>
+							<ammoSet>AmmoSet_JIStandard</ammoSet>
 						</li>
 						<li Class="CombatExtended.CompProperties_FireModes">
 						  <aimedBurstShotCount>5</aimedBurstShotCount>
