@@ -68,8 +68,7 @@
 
 			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_CruciblePrecisionRifle</defName>
-				<label>energy bolt</label>
-				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>				
+				<label>energy bolt</label>			
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
 					<damageAmountBase>20</damageAmountBase>
 					<armorPenetrationBlunt>1.5</armorPenetrationBlunt>

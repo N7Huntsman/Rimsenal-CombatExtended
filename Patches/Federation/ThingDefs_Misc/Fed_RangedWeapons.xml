@@ -120,6 +120,7 @@
 					<soundCastTail>GunTail_Heavy</soundCastTail>
 				</Properties>
 				<FireModes>
+					<aiUseBurstMode>FALSE</aiUseBurstMode>
 				</FireModes>
 			</li>
 			
@@ -147,6 +148,7 @@
 					<muzzleFlashScale>10</muzzleFlashScale>
 				</Properties>
 				<FireModes>
+					<aiUseBurstMode>FALSE</aiUseBurstMode>
 				</FireModes>
 			</li>
 			
@@ -206,6 +208,7 @@
 				<FireModes>
 					<aimedBurstShotCount>3</aimedBurstShotCount>
 					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
 				</FireModes>
 			</li>
 
@@ -235,6 +238,7 @@
 				<FireModes>
 					<aimedBurstShotCount>3</aimedBurstShotCount>
 					<aiUseBurstMode>TRUE</aiUseBurstMode>
+					<aiAimMode>AimedShot</aiAimMode>
 				</FireModes>
 			</li>
 			
@@ -372,13 +376,12 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_CruciblePrecisionRifle</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
-					<burstShotCount>2</burstShotCount>
-					<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
 					<range>75</range>
 					<soundCast>RS_ShotCPR</soundCast>
 					<muzzleFlashScale>12</muzzleFlashScale>
 				</Properties>
 				<FireModes>
+					<aiAimMode>AimedShot</aiAimMode>
 				</FireModes>
 			</li>
 
@@ -399,13 +402,12 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_CruciblePrecisionRifle</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
-					<burstShotCount>2</burstShotCount>
-					<ticksBetweenBurstShots>40</ticksBetweenBurstShots>
 					<range>75</range>
 					<soundCast>RS_ShotCPR</soundCast>
 					<muzzleFlashScale>12</muzzleFlashScale>
 				</Properties>
 				<FireModes>
+					<aiAimMode>AimedShot</aiAimMode>
 				</FireModes>
 			</li>
 			
