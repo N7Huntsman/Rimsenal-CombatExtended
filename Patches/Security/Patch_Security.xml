@@ -343,7 +343,7 @@
 					  <Mass>16.5</Mass>
 					  <Bulk>20</Bulk>	
 					  <MarketValue>2000</MarketValue>
-					  <SightsEfficiency>1</SightsEfficiency>
+					  <SightsEfficiency>2.6</SightsEfficiency>
 					  <ShotSpread>0.04</ShotSpread>
 					  <SwayFactor>0.96</SwayFactor>
 					  <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
@@ -353,8 +353,8 @@
 						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_MoltenShell</defaultProjectile>
-						<warmupTime>5.8</warmupTime>
-						<range>90</range>
+						<warmupTime>2</warmupTime>
+						<range>94</range>
 						<soundCast>RS_ShotJI</soundCast>
 						<muzzleFlashScale>16</muzzleFlashScale>
 						<recoilPattern>Mounted</recoilPattern>
