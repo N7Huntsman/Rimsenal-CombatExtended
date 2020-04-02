@@ -8,15 +8,6 @@
     <iconPath>UI/Icons/ThingCategories/CaliberRocket</iconPath>
   </ThingCategoryDef>
 
-	<!-- ==================== Ammo Category ========================== -->
-
-  <CombatExtended.AmmoCategoryDef>
-    <defName>MoltenShell</defName>
-    <label>molten shell</label>
-    <labelShort>MS</labelShort>
-    <description>An alloy shell heated nearly to the melting point.</description>
-  </CombatExtended.AmmoCategoryDef>
-
 	<!-- ==================== AmmoSet ========================== -->
 
   <CombatExtended.AmmoSetDef>
@@ -58,10 +49,10 @@
 		<ammoClass>MoltenShell</ammoClass>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamage>25</explosionDamage>
-        <explosionDamageDef>Bomb</explosionDamageDef>
-        <explosionRadius>1.5</explosionRadius>
-        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		<damageAmountBase>25</damageAmountBase>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<explosiveRadius>1.5</explosiveRadius>
+		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>		  
       </li>
     </comps>
   </ThingDef>
@@ -94,14 +85,14 @@
 	  <armorPenetrationSharp>700</armorPenetrationSharp>
 	  <armorPenetrationBlunt>38.1</armorPenetrationBlunt>	  
     </projectile>
-		<comps>
-			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<explosionDamage>127</explosionDamage>
-				<explosionDamageDef>Bomb</explosionDamageDef>
-				<explosionRadius>1</explosionRadius>
-        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-			</li>
-		</comps>
+	<comps>
+		<li Class="CombatExtended.CompProperties_ExplosiveCE">
+			<damageAmountBase>127</damageAmountBase>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveRadius>1</explosiveRadius>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>	
+		</li>
+	</comps>
   </ThingDef>
 
 </Defs>

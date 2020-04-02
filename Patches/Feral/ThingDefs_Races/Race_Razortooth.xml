@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 			<mods>
-				<li>Rimsenal - Feral</li>
+				<li>Rimsenal - Feral Faction Pack</li>
 			</mods>
 		<match Class="PatchOperationSequence">
 		<operations>
@@ -36,7 +36,7 @@
 					<li Class="CombatExtended.ToolCE">
 						<label>left claw</label>
 						<capacities>
-							<li>Slash</li>
+							<li>Scratch</li>
 						</capacities>
 						<power>11</power>
 						<cooldownTime>1.19</cooldownTime>
@@ -55,7 +55,7 @@
 					<li Class="CombatExtended.ToolCE">
 						<label>right claw</label>
 						<capacities>
-							<li>Slash</li>
+							<li>Scratch</li>
 						</capacities>
 						<power>11</power>
 						<cooldownTime>1.19</cooldownTime>

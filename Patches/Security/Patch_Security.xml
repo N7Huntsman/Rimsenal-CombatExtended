@@ -364,7 +364,6 @@
 					  <li Class="CombatExtended.CompProperties_AmmoUser">
 						<magazineSize>1</magazineSize>
 						<reloadTime>8</reloadTime>
-						<spawnUnloaded>true</spawnUnloaded>
 						<ammoSet>AmmoSet_MoltenShell</ammoSet>
 					  </li>
 					  <li Class="CombatExtended.CompProperties_FireModes">
@@ -403,7 +402,6 @@
 				<AmmoUser>
 					<magazineSize>20</magazineSize>
 					<reloadTime>12</reloadTime>
-					<spawnUnloaded>false</spawnUnloaded>
 					<ammoSet>AmmoSet_90mmJIRocket</ammoSet>
 				</AmmoUser>
 				<FireModes>

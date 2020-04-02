@@ -3,10 +3,11 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
 			<mods>
-				<li>Rimsenal - Federation</li>
+				<li>Rimsenal - Federation Faction Pack</li>
 			</mods>
 		<match Class="PatchOperationSequence">
 		<operations>
+		
 			
 			<!-- === Repose Plasma Grenade === -->	
 			<li Class="PatchOperationAdd">
@@ -67,6 +68,13 @@
 				</value>
 			</li>
 
+		<!-- Change TickerType.-->
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="AD_Repose"]</xpath>
+			<value>
+				<tickerType>Normal</tickerType>
+			</value>
+		</li>	
 			<li Class="PatchOperationReplace">
 				<xpath>Defs/ThingDef[defName="AD_Repose"]/graphicData</xpath>
 				<value>
@@ -107,9 +115,9 @@
 				<xpath>Defs/ThingDef[defName="AD_Repose"]/comps</xpath>
 				<value>
 					<li Class="CombatExtended.CompProperties_ExplosiveCE">
-					  <explosionDamage>40</explosionDamage>
-					  <explosionDamageDef>Plasma</explosionDamageDef>
-					  <explosionRadius>1</explosionRadius>
+					  <damageAmountBase>40</damageAmountBase>
+					  <explosiveDamageType>Plasma</explosiveDamageType>
+					  <explosiveRadius>1</explosiveRadius>
 					</li>
 				</value>
 			</li>
@@ -224,10 +232,10 @@
 						</verbs>
 						<comps>
 						  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-							<explosionDamage>400</explosionDamage>
-							<explosionDamageDef>Plasma</explosionDamageDef>
-							<explosionRadius>12</explosionRadius>
-							<soundExplode>Explosion_GiantBomb</soundExplode>
+							<damageAmountBase>400</damageAmountBase>
+							<explosiveDamageType>Plasma</explosiveDamageType>
+							<explosiveRadius>12</explosiveRadius>
+							<explosionSound>Explosion_GiantBomb</explosionSound>
 						  </li>
 						</comps>
 					  </ThingDef>

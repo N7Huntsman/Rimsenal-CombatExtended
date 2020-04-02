@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
     <mods>
-		<li>Rimsenal</li>
+		<li>Rimsenal - Core</li>
     </mods>
 		<match Class="PatchOperationSequence">
 		<operations>
@@ -17,6 +17,7 @@
 			@Name="BaseRSGrenade"
 			]/recipeMaker</xpath>
 		</li>		
+
 
 		<li Class="PatchOperationRemove">
 			<xpath>Defs/ThingDef[defName="YP_BaegYa" or
@@ -34,7 +35,19 @@
 			defName="TE_Grief"
 			]/verbs</xpath>
 		</li>		
-		
+
+		<!-- Change TickerType.-->
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="YP_BaegYa" or
+			defName="JI_Dunder" or 
+			defName="GD_Bobcat" or 
+			defName="TE_Grief"
+			]</xpath>
+			<value>
+				<tickerType>Normal</tickerType>
+			</value>
+		</li>		
+
 		<!-- ========== Projectile thingClass ========== -->
 
 		<li Class="PatchOperationReplace">
@@ -185,7 +198,7 @@
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="Proj_BaegYa"]/comps</xpath>
 			<value>
-				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<li Class="CombatExtended.CompProperties_Fragments">
 				  <fragments>
 					<Fragment_Small>0</Fragment_Small>
 				  </fragments>
@@ -196,7 +209,7 @@
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="Proj_Dunder"]/comps</xpath>
 			<value>
-				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<li Class="CombatExtended.CompProperties_Fragments">
 				  <fragments>
 					<Fragment_Small>0</Fragment_Small>
 				  </fragments>
@@ -207,7 +220,7 @@
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="Proj_Bobcat"]/comps</xpath>
 			<value>
-				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<li Class="CombatExtended.CompProperties_Fragments">
 				  <fragments>
 					<Fragment_Small>30</Fragment_Small>
 				  </fragments>
@@ -218,7 +231,7 @@
 		<li Class="PatchOperationAdd">
 			<xpath>Defs/ThingDef[defName="Proj_Grief"]/comps</xpath>
 			<value>
-				<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<li Class="CombatExtended.CompProperties_Fragments">
 				  <fragments>
 					<Fragment_Small>0</Fragment_Small>
 				  </fragments>
@@ -334,13 +347,15 @@
 			<xpath>Defs/ThingDef[defName="YP_BaegYa"]/comps</xpath>
 			<value>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				  <explosionDamage>40</explosionDamage>
-				  <explosionDamageDef>Bomb</explosionDamageDef>
-				  <explosionRadius>1.5</explosionRadius>
-				  <fragments>
-					<Fragment_Small>20</Fragment_Small>
-				  </fragments>
+				  <damageAmountBase>40</damageAmountBase>
+				  <explosiveDamageType>Bomb</explosiveDamageType>
+				  <explosiveRadius>1.5</explosiveRadius>
 				</li>
+				<li Class="CombatExtended.CompProperties_Fragments">
+					<fragments>
+						<Fragment_Small>20</Fragment_Small>
+					</fragments>
+				</li>				
 			</value>
 		</li>
 
@@ -379,13 +394,16 @@
 			<xpath>Defs/ThingDef[defName="JI_Dunder"]/comps</xpath>
 			<value>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				  <explosionDamage>40</explosionDamage>
-				  <explosionDamageDef>Bomb</explosionDamageDef>
-				  <explosionRadius>1.5</explosionRadius>
-				  <fragments>
-					<Fragment_Small>50</Fragment_Small>
-				  </fragments>
+				  <damageAmountBase>40</damageAmountBase>
+				  <explosiveDamageType>Bomb</explosiveDamageType>
+				  <explosiveRadius>1.5</explosiveRadius>
+
 				</li>
+				<li Class="CombatExtended.CompProperties_Fragments">
+					<fragments>
+						<Fragment_Small>50</Fragment_Small>
+					</fragments>
+				</li>					
 			</value>
 		</li>
 
@@ -424,13 +442,15 @@
 			<xpath>Defs/ThingDef[defName="GD_Bobcat"]/comps</xpath>
 			<value>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				  <explosionDamage>40</explosionDamage>
-				  <explosionDamageDef>Bomb</explosionDamageDef>
-				  <explosionRadius>1.5</explosionRadius>
-				  <fragments>
-					<Fragment_Small>20</Fragment_Small>
-				  </fragments>
+				  <damageAmountBase>40</damageAmountBase>
+				  <explosiveDamageType>Bomb</explosiveDamageType>
+				  <explosiveRadius>1.5</explosiveRadius>
 				</li>
+				<li Class="CombatExtended.CompProperties_Fragments">
+				  <fragments>
+					<Fragment_Small>50</Fragment_Small>
+				  </fragments>
+				</li>					
 			</value>
 		</li>
 
@@ -472,13 +492,15 @@
 			<xpath>Defs/ThingDef[defName="TE_Grief"]/comps</xpath>
 			<value>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				  <explosionDamage>40</explosionDamage>
-				  <explosionDamageDef>Bomb</explosionDamageDef>
-				  <explosionRadius>1.5</explosionRadius>
+				  <damageAmountBase>40</damageAmountBase>
+				  <explosiveDamageType>Bomb</explosiveDamageType>
+				  <explosiveRadius>1.5</explosiveRadius>
+				</li>
+				<li Class="CombatExtended.CompProperties_Fragments">
 				  <fragments>
 					<Fragment_Small>20</Fragment_Small>
 				  </fragments>
-				</li>
+				</li>					
 			</value>
 		</li>
 
@@ -518,7 +540,7 @@
 		<value>
 
 			<RecipeDef Name="RSExplosive_RecipeBase" Abstract="true">
-				<workSpeedStat>SmithingSpeed</workSpeedStat>
+				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 				<effectWorking>Cook</effectWorking>
 				<soundWorking>Recipe_Smith</soundWorking>
 				<workSkill>Crafting</workSkill>

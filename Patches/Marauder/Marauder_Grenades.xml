@@ -136,8 +136,8 @@
 		<xpath>Defs/ThingDef[defName="RSWeapon_PipeBombs"]/comps</xpath>
 		<value>
 			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<explosionDamage>15</explosionDamage>
-				<explosionDamageDef>Bomb</explosionDamageDef>
+				<damageAmountBase>15</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
 				<explosionRadius>0.5</explosionRadius>
 				<fragments>			
 					<Fragment_Small>8</Fragment_Small>

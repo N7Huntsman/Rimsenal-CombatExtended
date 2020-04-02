@@ -51,17 +51,17 @@
     </statBases>
 	<ammoClass>RocketHEDP</ammoClass>
     <comps>
-      <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamage>50</explosionDamage>
-        <explosionDamageDef>Bomb</explosionDamageDef>
-        <explosionRadius>4</explosionRadius>
-        <fragRange>6</fragRange>
+	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+		<damageAmountBase>50</damageAmountBase>
+		<explosiveDamageType>Bomb</explosiveDamageType>
+		<explosiveRadius>4</explosiveRadius>
+        <explosionSound>Explosion_GiantBomb</explosionSound>
+	  </li>	
+	  <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
           <Fragment_RocketFrag>16</Fragment_RocketFrag>
         </fragments>
-		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-        <soundExplode>MortarBomb_Explode</soundExplode>
-      </li>
+	  </li>	  
     </comps>
   </ThingDef>
 	
@@ -92,16 +92,18 @@
 			<armorPenetrationSharp>500</armorPenetrationSharp>			
 		</projectile>
 		<comps>
-			<li Class="CombatExtended.CompProperties_ExplosiveCE">
-                <explosionDamage>98</explosionDamage>
-                <explosionDamageDef>Bomb</explosionDamageDef>
-                <explosionRadius>4</explosionRadius>
-                <fragments>
-                    <Fragment_Large>16</Fragment_Large>
-                </fragments>
-                <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-                <soundExplode>MortarBomb_Explode</soundExplode>
-			</li>
+		  <li Class="CombatExtended.CompProperties_ExplosiveCE">
+			<damageAmountBase>98</damageAmountBase>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<explosiveRadius>4</explosiveRadius>
+			<explosionSound>Explosion_GiantBomb</explosionSound>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+		  </li>	
+		<li Class="CombatExtended.CompProperties_Fragments">
+			<fragments>
+				<Fragment_Large>16</Fragment_Large>
+			</fragments>
+		  </li>		
 		</comps>
 	</ThingDef>
 

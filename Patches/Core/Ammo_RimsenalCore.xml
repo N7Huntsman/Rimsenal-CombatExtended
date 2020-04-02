@@ -2,7 +2,7 @@
 
 	<Operation Class="PatchOperationFindMod">
     <mods>
-		<li>Rimsenal</li>
+		<li>Rimsenal - Core</li>
     </mods>
 		<match Class="PatchOperationSequence">
 		 <operations>		

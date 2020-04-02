@@ -2,7 +2,7 @@
 <Patch>
 	<Operation Class="PatchOperationFindMod">
     <mods>
-		<li>Rimsenal</li>
+		<li>Rimsenal - Core</li>
     </mods>
 		<match Class="PatchOperationSequence">
 		<operations>
@@ -13,8 +13,7 @@
 		<xpath>Defs/CombatExtended.AmmoSetDef[defName="AmmoSet_40x46mmGrenade"]/ammoTypes</xpath>
 		<value>
 			<Ammo_40x46mmGrenade_Buck>Bullet_40mmGauge_Buck</Ammo_40x46mmGrenade_Buck>
-			<Ammo_40x46mmGrenade_INC>Bullet_40x46mmGrenade_INC</Ammo_40x46mmGrenade_INC>
-			<Ammo_40x46mmGrenade_SMK>Bullet_40x46mmGrenade_SMK</Ammo_40x46mmGrenade_SMK>				
+			<Ammo_40x46mmGrenade_INC>Bullet_40x46mmGrenade_INC</Ammo_40x46mmGrenade_INC>			
 		</value>
 	</li>	
 
@@ -52,33 +51,12 @@
 			<ammoClass>ThermobaricFuel</ammoClass>
 			<comps>
 				<li Class="CombatExtended.CompProperties_ExplosiveCE">
-					<explosionDamage>1</explosionDamage>
-					<explosionDamageDef>PrometheumFlame</explosionDamageDef>
-					<explosionRadius>0.5</explosionRadius>
+					<damageAmountBase>1</damageAmountBase>
+					<explosiveDamageType>PrometheumFlame</explosiveDamageType>
+					<explosiveRadius>0.5</explosiveRadius>
 					<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
 					<preExplosionSpawnChance>1</preExplosionSpawnChance>
 				</li>
-			</comps>
-		  </ThingDef>
-
-		  <ThingDef Class="CombatExtended.AmmoDef" ParentName="40x46mmGrenadeBase">
-			<defName>Ammo_40x46mmGrenade_SMK</defName>
-			<label>40x46mm grenade (Smoke)</label>
-			<graphicData>
-			  <texPath>Things/Ammo/GrenadeLauncher/SMK</texPath>
-			  <graphicClass>Graphic_StackCount</graphicClass>
-			</graphicData>
-			<statBases>
-			  <MarketValue>0.96</MarketValue>
-			</statBases>
-			<ammoClass>Smoke</ammoClass>
-			<comps>
-			  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-				<explosionDamageDef>Smoke</explosionDamageDef>
-				<explosionRadius>4</explosionRadius>
-				<postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
-				<preExplosionSpawnChance>1</preExplosionSpawnChance>
-			  </li>
 			</comps>
 		  </ThingDef>
 
@@ -110,19 +88,6 @@
 				<damageAmountBase>5</damageAmountBase>
 				<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
 				<preExplosionSpawnChance>1</preExplosionSpawnChance>
-			</projectile>
-		  </ThingDef>
-
-		  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base40x46mmGrenadeBullet">
-			<defName>Bullet_40x46mmGrenade_SMK</defName>
-			<label>40x46mm grenade (Smoke)</label>
-			<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			  <explosionRadius>4</explosionRadius>
-			  <damageDef>Smoke</damageDef>
-			  <dropsCasings>true</dropsCasings>
-			  <casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
-			  <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
-			  <preExplosionSpawnChance>1</preExplosionSpawnChance>
 			</projectile>
 		  </ThingDef>
 
@@ -202,32 +167,6 @@
 			  <Ammo_40x46mmGrenade_INC>100</Ammo_40x46mmGrenade_INC>
 			</products>
 			<workAmount>8400</workAmount>
-		  </RecipeDef>
-
-		  <RecipeDef ParentName="AmmoRecipeBase">
-			<defName>MakeAmmo_40x46mmGrenade_SMK</defName>
-			<label>make 40x46mm smoke grenades x100</label>
-			<description>Craft 100 40x46mm smoke grenades.</description>
-			<jobString>Making 40x46mm smoke grenades.</jobString>
-			<ingredients>
-			  <li>
-				<filter>
-				  <thingDefs>
-					<li>Steel</li>
-				  </thingDefs>
-				</filter>
-				<count>48</count>
-			  </li>
-			</ingredients>
-			<fixedIngredientFilter>
-			  <thingDefs>
-				<li>Steel</li>
-			  </thingDefs>
-			</fixedIngredientFilter>
-			<products>
-			  <Ammo_40x46mmGrenade_SMK>100</Ammo_40x46mmGrenade_SMK>
-			</products>
-			<workAmount>4800</workAmount>
 		  </RecipeDef>
 		  
 		</value>
