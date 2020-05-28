@@ -591,10 +591,10 @@
 					<Bulk>6.0</Bulk>
 				</statBases>
 				<Properties>
-					<recoilAmount>2.88</recoilAmount>
+					<recoilAmount>2.58</recoilAmount>
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_40x46mmGrenade_HE</defaultProjectile>
+					<defaultProjectile>Bullet_25x40mmGrenade_HE</defaultProjectile>
 					<warmupTime>1.1</warmupTime>
 					<range>40</range>
 					<minRange>5</minRange>
@@ -606,9 +606,9 @@
 					<muzzleFlashScale>14</muzzleFlashScale>
 				</Properties>
 				<AmmoUser>
-					<magazineSize>6</magazineSize>
+					<magazineSize>8</magazineSize>
 					<reloadTime>5.1</reloadTime>
-					<ammoSet>AmmoSet_40x46mmGrenade</ammoSet>
+					<ammoSet>AmmoSet_25x40mmGrenade</ammoSet>
 				</AmmoUser>
 				<FireModes>
 					<aiUseBurstMode>False</aiUseBurstMode>

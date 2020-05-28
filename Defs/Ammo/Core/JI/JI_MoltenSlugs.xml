@@ -50,7 +50,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseJISlugBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseJISlugBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Slug</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -62,7 +62,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseJISlugBullet">
+	<ThingDef ParentName="BaseJISlugBullet">
 		<defName>Bullet_JI_Molten</defName>
 		<label>molten slug</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

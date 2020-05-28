@@ -3,7 +3,7 @@
 			
 			<!-- ==========  Crucible Rifle Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BaseCrucibleRifleBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BaseCrucibleRifleBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Laser</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -15,7 +15,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_CrucibleRifle</defName>
 				<label>energy bolt</label>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -27,7 +27,7 @@
 			
 			<!-- ==========  Crucible Pistol Projectile =========== -->
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_CruciblePistol</defName>
 				<label>energy bolt</label>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -39,7 +39,7 @@
 			
 			<!-- ==========  Heat Cannon Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BaseHeatCannonBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BaseHeatCannonBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Pulse</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -52,7 +52,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseHeatCannonBullet">
+			<ThingDef ParentName="BaseHeatCannonBullet">
 				<defName>Bullet_HeatCannon</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>heat bolt</label>
@@ -66,7 +66,7 @@
 			
 			<!-- ==========  Crucible Precision Rifle Projectile =========== -->
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_CruciblePrecisionRifle</defName>
 				<label>energy bolt</label>			
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -78,7 +78,7 @@
 			
 			<!-- ==========  Plasma Caster Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BasePlasmaCasterBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BasePlasmaCasterBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Flux</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -91,7 +91,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePlasmaCasterBullet">
+			<ThingDef ParentName="BasePlasmaCasterBullet">
 				<defName>Bullet_PlasmaCaster</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>plasma sphere</label>
@@ -105,7 +105,7 @@
 			
 			<!-- ==========  Crucible Carbine Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_CrucibleCarbine</defName>
 				<label>energy bolt</label>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">

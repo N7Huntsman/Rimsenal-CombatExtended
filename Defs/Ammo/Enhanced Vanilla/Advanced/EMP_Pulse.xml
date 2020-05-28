@@ -3,7 +3,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseBullet">
+  <ThingDef ParentName="BaseBullet">
     <defName>EMP_Blast</defName>
     <thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
     <label>emp blast</label>

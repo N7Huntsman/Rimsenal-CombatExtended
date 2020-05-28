@@ -56,6 +56,17 @@
 					<Bulk>12</Bulk>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="MeleeWeapon_FeralGlaive"]</xpath>
+				<value>
+					<modExtensions>
+					  <li Class="CombatExtended.GunDrawExtension">
+						<DrawSize>1.6,1.5</DrawSize>
+						<DrawOffset>0.35,0.30</DrawOffset>
+					  </li>
+					</modExtensions>
+				</value>
+			</li>			
 
 			<!-- Feral Knife -->			
 			<li Class="PatchOperationReplace">

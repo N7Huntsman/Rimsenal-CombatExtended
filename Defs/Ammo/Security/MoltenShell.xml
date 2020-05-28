@@ -59,7 +59,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Base90mmCannonShell" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="Base90mmCannonShell" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
       <shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -71,7 +71,7 @@
 		</projectile>
 	</ThingDef>
 
-  <ThingDef Class="CombatExtended.AmmoDef" ParentName="Base90mmCannonShell">
+  <ThingDef ParentName="Base90mmCannonShell">
     <defName>Bullet_MoltenShell</defName>
     <label>molten shell</label>
     <graphicData>

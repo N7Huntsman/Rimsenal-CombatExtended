@@ -34,7 +34,7 @@
 	 
 	 <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseScrap"> 
 	 <defName>Ammo_Feral_Scrap</defName> 
-	 <label>>Bits of jagged scrap metal</label> 
+	 <label>Bits of jagged scrap metal</label> 
 	 <graphicData>     
 		<texPath>Things/Ammo/Nail</texPath>
 		<graphicClass>Graphic_StackCount</graphicClass>
@@ -48,7 +48,7 @@
 
 <!-- ================== Projectiles ================== --> 
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseScrapBullet" ParentName="BaseBullet" Abstract="true"> 
+	<ThingDef Name="BaseScrapBullet" ParentName="BaseBullet" Abstract="true"> 
 	<graphicData> 
 		<texPath>Things/Projectile/Scrap</texPath> 
 		<graphicClass>Graphic_Single</graphicClass> 
@@ -60,7 +60,7 @@
 	</projectile> 
 	</ThingDef> 
 
-	 <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseScrapBullet"> 
+	 <ThingDef ParentName="BaseScrapBullet"> 
 	<defName>Bullet_Feral_Scrap</defName> 
 	<label>scrap metal</label> 
 	<projectile Class="CombatExtended.ProjectilePropertiesCE"> 

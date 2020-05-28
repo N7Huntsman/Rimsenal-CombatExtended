@@ -118,7 +118,7 @@
 					<recoilAmount>2.47</recoilAmount>					
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
+					<defaultProjectile>Bullet_10mmAuto_FMJ</defaultProjectile>
 					<warmupTime>0.6</warmupTime>
 					<range>12</range>
 					<soundCast>RS_ShotSmartPistol</soundCast>
@@ -128,7 +128,7 @@
 				<AmmoUser>
 					<magazineSize>12</magazineSize>
 					<reloadTime>3.0</reloadTime>
-					<ammoSet>AmmoSet_45ACP</ammoSet>
+					<ammoSet>AmmoSet_10mmAuto</ammoSet>
 				</AmmoUser>
 				<FireModes>
 				</FireModes>
@@ -285,7 +285,7 @@
 					<recoilAmount>2.14</recoilAmount>					
 					<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 					<hasStandardCommand>true</hasStandardCommand>
-					<defaultProjectile>Bullet_127x55mmSniper_FMJ</defaultProjectile>
+					<defaultProjectile>Bullet_127x55mmAR_FMJ</defaultProjectile>
 					<warmupTime>1.6</warmupTime>
 					<range>75</range>
 					<soundCast>RS_ShotSSR</soundCast>
@@ -295,7 +295,7 @@
 				<AmmoUser>
 					<magazineSize>10</magazineSize>
 					<reloadTime>3.0</reloadTime>
-					<ammoSet>AmmoSet_127x55mmSniper</ammoSet>
+					<ammoSet>AmmoSet_127x55mmAR</ammoSet>
 				</AmmoUser>
 				<FireModes>
 					<aiAimMode>AimedShot</aiAimMode>

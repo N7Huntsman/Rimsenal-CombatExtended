@@ -27,7 +27,7 @@
 			</ThingDef>
 			
 			<!-- ==========  Plasma Bombard Projectile =========== -->
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BasePlasmaTurretBombardBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BasePlasmaTurretBombardBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Plasma</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -42,7 +42,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePlasmaTurretBombardBullet">
+			<ThingDef ParentName="BasePlasmaTurretBombardBullet">
 				<defName>Bullet_PlasmaTurretBombard</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>energy bolt</label>

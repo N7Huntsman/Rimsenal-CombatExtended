@@ -56,5 +56,12 @@
 		<labelShort>MS</labelShort>
 		<description>An alloy shell heated nearly to the melting point.</description>
   </CombatExtended.AmmoCategoryDef>
+
+   <CombatExtended.AmmoCategoryDef>
+    <defName>RocketHE</defName>
+    <label>High Explosive</label>
+    <labelShort>HE</labelShort>
+    <description>Designed to explode, damaging targets in a large area.</description>
+  </CombatExtended.AmmoCategoryDef>
   
 </Defs>

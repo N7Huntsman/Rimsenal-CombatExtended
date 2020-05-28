@@ -3,7 +3,7 @@
 			
 			<!-- ==========  Plasma Rifle Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BasePlasmaRifleBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BasePlasmaRifleBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Plasma</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -15,7 +15,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePlasmaRifleBullet">
+			<ThingDef ParentName="BasePlasmaRifleBullet">
 				<defName>Bullet_PlasmaRifle</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>plasma sphere</label>
@@ -29,7 +29,7 @@
 			
 			<!-- ==========  Plasma Bomb Projectile =========== -->
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BasePlasmaCasterBullet">
+			<ThingDef ParentName="BasePlasmaCasterBullet">
 				<defName>Bullet_PlasmaBomb</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>plasma bomb</label>
@@ -43,7 +43,7 @@
 			
 			<!-- ==========  EMP Bomb Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BaseEMPBombBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BaseEMPBombBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/A16/MechPlasma</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -55,7 +55,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseEMPBombBullet">
+			<ThingDef ParentName="BaseEMPBombBullet">
 				<defName>Bullet_EMPBomb</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>EMP</label>
@@ -69,7 +69,7 @@
 			
 			<!-- ==========  Auxiliary Pistol Projectile =========== -->
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_AuxiliaryPistol</defName>
 				<label>energy bolt</label>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">
@@ -81,7 +81,7 @@
 			
 			<!-- ==========  Makeshift Crucible Rifle Projectile =========== -->
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleRifleBullet">
+			<ThingDef ParentName="BaseCrucibleRifleBullet">
 				<defName>Bullet_MakeshiftCrucibleRifle</defName>
 				<label>energy bolt</label>
 				<projectile Class="CombatExtended.ProjectilePropertiesCE">

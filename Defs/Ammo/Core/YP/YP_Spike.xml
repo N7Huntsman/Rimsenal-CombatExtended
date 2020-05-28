@@ -51,7 +51,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseSpikeYPBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseSpikeYPBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Spike</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -64,7 +64,7 @@
 	</ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseSpikeYPBullet">
+	<ThingDef ParentName="BaseSpikeYPBullet">
 		<defName>Bullet_SpikeYP_CC</defName>
 		<label>7.62x55mm YP bullet (CC)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

@@ -50,7 +50,7 @@
       <Mass>10</Mass>
       <Bulk>10</Bulk>
     </statBases>
-    <ammoClass>RocketFrag</ammoClass>
+    <ammoClass>RocketHE</ammoClass>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">
         <damageAmountBase>100</damageAmountBase>
@@ -97,7 +97,7 @@
   </ThingDef>
 
 	<!-- ================== Projectiles ================== -->
-  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseATGMProjectile" ParentName="BaseBullet" Abstract="true">
+  <ThingDef Name="BaseATGMProjectile" ParentName="BaseBullet" Abstract="true">
     <graphicData>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
@@ -109,7 +109,7 @@
   </ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseATGMProjectile">
+	<ThingDef ParentName="BaseATGMProjectile">
 		<defName>Bullet_ATGM_HE</defName>
 		<label>Anti-tank guided missile (HE)</label>
 		<graphicData>
@@ -136,7 +136,7 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseATGMProjectile">
+	<ThingDef ParentName="BaseATGMProjectile">
 		<defName>Bullet_ATGM_AP</defName>
 		<label>Anti-tank guided missile (HEAT)</label>
 		<graphicData>

@@ -50,7 +50,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseTEPowerChargeBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseTEPowerChargeBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/ImpactM</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
 	</ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseTEPowerChargeBullet">
+	<ThingDef ParentName="BaseTEPowerChargeBullet">
 		<defName>Bullet_TEPowerCharge_KE</defName>
 		<label>TE energy blast (KE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

@@ -3,7 +3,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseMicroWaveBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseMicroWaveBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 		  <texPath>Things/Projectile/Microwave</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -12,7 +12,7 @@
 	</ThingDef>
 
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseMicroWaveBullet">
+	<ThingDef ParentName="BaseMicroWaveBullet">
 		<defName>Bullet_GeugGwang_CE</defName>
 		<label>microwave</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>

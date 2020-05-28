@@ -51,7 +51,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseRifleYPBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseRifleYPBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Shard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -63,7 +63,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseRifleYPBullet">
+	<ThingDef ParentName="BaseRifleYPBullet">
 		<defName>Bullet_RifleYP_CC</defName>
 		<label>5.45x45mm YP bullet (CC)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

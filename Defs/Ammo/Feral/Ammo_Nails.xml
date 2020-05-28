@@ -50,7 +50,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseNailBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseNailBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Nail</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -62,7 +62,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseNailBullet">
+	<ThingDef ParentName="BaseNailBullet">
 		<defName>Bullet_Feral_Nail</defName>
 		<label>Nail</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

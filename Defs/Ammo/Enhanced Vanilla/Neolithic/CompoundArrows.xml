@@ -54,7 +54,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseCompoundArrowProjectile" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseCompoundArrowProjectile" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Arrow_Compound</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -70,7 +70,7 @@
 			x = preExplosionSpawnChance,
 			r = resource cost. -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCompoundArrowProjectile">
+	<ThingDef ParentName="BaseCompoundArrowProjectile">
 		<defName>Projectile_CompoundArrow_Broadhead</defName>
 		<label>compound arrow</label>
 		<graphicData>

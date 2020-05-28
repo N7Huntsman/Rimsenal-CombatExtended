@@ -28,7 +28,7 @@
 -->		
 			<!-- ==========  Crucible Cannon Projectile =========== -->
 			
-			<ThingDef Class="CombatExtended.AmmoDef" Name="BaseCrucibleCannonBullet" ParentName="BaseBullet" Abstract="true">
+			<ThingDef Name="BaseCrucibleCannonBullet" ParentName="BaseBullet" Abstract="true">
 				<graphicData>
 					<texPath>Things/Projectile/Mlaser</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -41,7 +41,7 @@
 				</projectile>
 			</ThingDef>
 
-			<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseCrucibleCannonBullet">
+			<ThingDef ParentName="BaseCrucibleCannonBullet">
 				<defName>Bullet_CrucibleCannon</defName>
 				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 				<label>energy bolt</label>

@@ -3,7 +3,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="BaseFakeBullet" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="BaseFakeBullet" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<texPath>Things/Projectile/Bullet_Small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -15,7 +15,7 @@
 		</projectile>
 	</ThingDef>
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFakeBullet">
+	<ThingDef ParentName="BaseFakeBullet">
 		<defName>Bullet_FakeBullet_CE</defName>
 		<label>dummy round</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">

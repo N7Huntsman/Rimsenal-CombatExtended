@@ -388,7 +388,7 @@
 					<hasStandardCommand>true</hasStandardCommand>
 					<defaultProjectile>Bullet_90mmJI_HEDP</defaultProjectile>
 					<warmupTime>3.7</warmupTime>
-					<range>86</range>
+					<range>94</range>
 					<burstShotCount>4</burstShotCount>
 					<ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 					<soundCast>RS_ShotGrendel</soundCast>

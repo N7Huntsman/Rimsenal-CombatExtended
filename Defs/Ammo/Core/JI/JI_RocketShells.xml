@@ -59,7 +59,7 @@
 	  </li>	
 	  <li Class="CombatExtended.CompProperties_Fragments">
         <fragments>
-          <Fragment_RocketFrag>16</Fragment_RocketFrag>
+          <Fragment_Large>16</Fragment_Large>
         </fragments>
 	  </li>	  
     </comps>
@@ -67,7 +67,7 @@
 	
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef Class="CombatExtended.AmmoDef" Name="Base90mmJIRocket" ParentName="BaseBullet" Abstract="true">
+	<ThingDef Name="Base90mmJIRocket" ParentName="BaseBullet" Abstract="true">
 		<graphicData>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
@@ -77,7 +77,7 @@
 		</projectile>
 	</ThingDef>	
 
-	<ThingDef Class="CombatExtended.AmmoDef" ParentName="Base90mmJIRocket">
+	<ThingDef ParentName="Base90mmJIRocket">
 		<defName>Bullet_90mmJI_HEDP</defName>
 		<label>90mm JI rocket (HEDP)</label>
 		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
