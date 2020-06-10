@@ -493,6 +493,26 @@
 					<AimingAccuracy>1.0</AimingAccuracy>
 				</value>
 			</li>
+		 	
+			<!-- ========== fillpercent replacement ========== -->
+
+			<li Class="PatchOperationReplace">
+			          <xpath>/Defs/ThingDef[
+					defName="Turret_MC" or
+					defName="NestMissile" or
+					defName="NestHMG" or
+					defName="NestAGS" or
+					defName="NestMMG" or
+					defName="RocketTurret" or
+					defName="ShardSentry" or
+					defName="SuvTurret" or
+					defName="WaveEmitter" or
+					defName="RSDummy"
+				  ]/fillPercent</xpath>
+			          <value>
+			            <fillPercent>0.85</fillPercent>
+			          </value>
+			</li>
 
 			<!-- ========== Impact Mine ========== -->
 			<li Class="PatchOperationReplace">
