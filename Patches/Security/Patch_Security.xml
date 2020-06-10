@@ -497,8 +497,7 @@
 			<!-- ========== fillpercent replacement ========== -->
 
 			<li Class="PatchOperationReplace">
-			          <xpath>/Defs/ThingDef[
-					defName="Turret_MC" or
+		          	<xpath>/Defs/ThingDef[
 					defName="NestMissile" or
 					defName="NestHMG" or
 					defName="NestAGS" or
@@ -508,10 +507,17 @@
 					defName="SuvTurret" or
 					defName="WaveEmitter" or
 					defName="RSDummy"
-				  ]/fillPercent</xpath>
-			          <value>
+				]/fillPercent</xpath>
+				<value>
 			            <fillPercent>0.85</fillPercent>
-			          </value>
+			  	</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "BaseMCBuilding"]/fillPercent</xpath>
+				<value>
+					<fillPercent>0.85</fillPercent>
+				</value>
 			</li>
 
 			<!-- ========== Impact Mine ========== -->
