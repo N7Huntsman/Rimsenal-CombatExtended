@@ -333,7 +333,7 @@
 					<defName>Artillery_MC</defName>
 					<label>molten cannon</label>
 					<graphicData>
-					  <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+					  <texPath>Things/Building/Turrets/FlakTurret_Top</texPath>
 					  <graphicClass>Graphic_Single</graphicClass>
 					</graphicData>
 					<description>An enormous cannon that fires a projectile of molten metal. Though less useful against soft targets than conventional artillery and limited to a direct fire role, but definitely more powerful, it is nevertheless the ideal anti-mechanoid cannon, and is extensively employed in the ongoing mechanoid war on Jotunheim Prime. Fires molten shells.</description>
@@ -497,8 +497,7 @@
 			<!-- ========== fillpercent replacement ========== -->
 
 			<li Class="PatchOperationReplace">
-			          <xpath>/Defs/ThingDef[
-					defName="Turret_MC" or
+		          	<xpath>/Defs/ThingDef[
 					defName="NestMissile" or
 					defName="NestHMG" or
 					defName="NestAGS" or
@@ -508,10 +507,17 @@
 					defName="SuvTurret" or
 					defName="WaveEmitter" or
 					defName="RSDummy"
-				  ]/fillPercent</xpath>
-			          <value>
+				]/fillPercent</xpath>
+				<value>
 			            <fillPercent>0.85</fillPercent>
-			          </value>
+			  	</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[@Name = "BaseMCBuilding"]/fillPercent</xpath>
+				<value>
+					<fillPercent>0.85</fillPercent>
+				</value>
 			</li>
 
 			<!-- ========== Impact Mine ========== -->
