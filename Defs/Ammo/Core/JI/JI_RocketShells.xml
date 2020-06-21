@@ -80,7 +80,6 @@
 	<ThingDef ParentName="Base90mmJIRocket">
 		<defName>Bullet_90mmJI_HEDP</defName>
 		<label>90mm JI rocket (HEDP)</label>
-		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
 		<graphicData>
 			<texPath>Things/Projectile/Rocket</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
