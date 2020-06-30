@@ -234,7 +234,7 @@
             <statBases>
                 <Mass>4.20</Mass>
                 <RangedWeapon_Cooldown>0.37</RangedWeapon_Cooldown>
-                <SightsEfficiency>0.7</SightsEfficiency>
+                <SightsEfficiency>0.6</SightsEfficiency>
                 <ShotSpread>0.67</ShotSpread>
                 <SwayFactor>1.95</SwayFactor>
                 <Bulk>5.8</Bulk>
@@ -277,7 +277,7 @@
                 <ShotSpread>0.15</ShotSpread>
                 <SwayFactor>1.26</SwayFactor>
                 <Bulk>6.7</Bulk>
-                <SightsEfficiency>1</SightsEfficiency>
+                <SightsEfficiency>0.9</SightsEfficiency>
                 <WorkToMake>22500</WorkToMake>
             </statBases>
             <Properties>
@@ -308,7 +308,7 @@
             <statBases>
                 <Mass>5.3</Mass>
                 <RangedWeapon_Cooldown>0.38</RangedWeapon_Cooldown>
-                <SightsEfficiency>0.89</SightsEfficiency>
+                <SightsEfficiency>0.90</SightsEfficiency>
                 <ShotSpread>0.37</ShotSpread>
                 <SwayFactor>1.7</SwayFactor>
                 <Bulk>11.03</Bulk>
@@ -386,7 +386,7 @@
 			<statBases>
 			  <Mass>4.2</Mass>
 			  <RangedWeapon_Cooldown>0.44</RangedWeapon_Cooldown>
-			  <SightsEfficiency>0.9</SightsEfficiency>
+			  <SightsEfficiency>0.90</SightsEfficiency>
 			  <ShotSpread>0.18</ShotSpread>
 			  <SwayFactor>1.4</SwayFactor>
 			  <Bulk>5</Bulk>
