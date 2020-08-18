@@ -9,85 +9,85 @@
 		<operations>
 		
 			
-			<!-- === Repose Plasma Grenade === -->	
+		<!-- === Repose Plasma Grenade === -->	
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]</xpath>
+			<value>
+				<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]/graphicData/texPath</xpath>
+			<value>
+				<texPath>ThirdParty/Rimsenal/Repose</texPath>
+			</value>
+		</li>
+
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]/projectile</xpath>
+			<value>
+				<projectile Class="CombatExtended.ProjectilePropertiesCE">
+					<explosionRadius >1</explosionRadius >
+					<damageDef>Plasma</damageDef>
+					<damageAmountBase>65</damageAmountBase>
+					<explosionDelay>100</explosionDelay>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+				</projectile>
+			</value>
+		</li>
+
+		<li Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]/comps</xpath>
+			<success>Invert</success>
+			</li>
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]</xpath>
-				<value>
-					<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
-				</value>
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]</xpath>
+			<value>
+				<comps />
+			</value>
 			</li>
+		</operations>
+		</li>
 
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]/graphicData/texPath</xpath>
-				<value>
-					<texPath>Things/Ammo/Repose/Repose_a</texPath>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]/projectile</xpath>
-				<value>
-					<projectile Class="CombatExtended.ProjectilePropertiesCE">
-					  <explosionRadius >1</explosionRadius >
-					  <damageDef>Plasma</damageDef>
-					  <damageAmountBase>65</damageAmountBase>
-					  <explosionDelay>100</explosionDelay>
-				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-					</projectile>
-				</value>
-			</li>
-
-			<li Class="PatchOperationSequence">
-			<success>Always</success>
-			<operations>
-				<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]/comps</xpath>
-				<success>Invert</success>
+		<li Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Proj_Repose"]/comps</xpath>
+			<value>
+				<li Class="CombatExtended.CompProperties_ExplosiveCE">
 				</li>
-				<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]</xpath>
-				<value>
-					<comps />
-				</value>
-				</li>
-			</operations>
-			</li>
+			</value>
+		</li>
 
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="Proj_Repose"]/comps</xpath>
-				<value>
-					<li Class="CombatExtended.CompProperties_ExplosiveCE">
-					</li>
-				</value>
-			</li>
-
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]/label</xpath>
-				<value>
-					<label>plasma grenade</label>
-				</value>
-			</li>
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]/label</xpath>
+			<value>
+				<label>plasma grenade</label>
+			</value>
+		</li>
 
 		<!-- Change TickerType.-->
 		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="AD_Repose"]</xpath>
+			<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]</xpath>
 			<value>
 				<tickerType>Normal</tickerType>
 			</value>
 		</li>	
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]/graphicData</xpath>
+				<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]/graphicData</xpath>
 				<value>
 					<graphicData>
-					  <texPath>Things/Ammo/Repose</texPath>
-					  <graphicClass>Graphic_StackCount</graphicClass>
+					  <texPath>ThirdParty/Rimsenal/Repose</texPath>
+					  <graphicClass>Graphic_Single</graphicClass>
 					  <onGroundRandomRotateAngle>0</onGroundRandomRotateAngle>
 					</graphicData>
 				</value>
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]</xpath>
+				<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]</xpath>
 				<value>
 					<thingClass>CombatExtended.AmmoThing</thingClass>
 					<stackLimit>75</stackLimit>
@@ -99,11 +99,11 @@
 			<success>Always</success>
 			<operations>
 				<li Class="PatchOperationTest">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]/comps</xpath>
 				<success>Invert</success>
 				</li>
 				<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]</xpath>
+				<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]</xpath>
 				<value>
 					<comps />
 				</value>
@@ -112,7 +112,7 @@
 			</li>
 
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="AD_Repose"]/comps</xpath>
+				<xpath>Defs/ThingDef[defName="AD_FedPlasmaGrenades"]/comps</xpath>
 				<value>
 					<li Class="CombatExtended.CompProperties_ExplosiveCE">
 					  <damageAmountBase>40</damageAmountBase>
@@ -123,7 +123,7 @@
 			</li>
 			
 			  <li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-				<defName>AD_Repose</defName>
+				<defName>AD_FedPlasmaGrenades</defName>
 				<statBases>
 					<Mass>0.45</Mass>
 					<MarketValue>8.25</MarketValue>

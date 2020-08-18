@@ -17,7 +17,6 @@
 		</value>
 	</li>	
 
-
   <!-- ==================== Ammo ========================== -->
 
 	<li Class="PatchOperationAdd">
@@ -28,7 +27,7 @@
 			<defName>Ammo_40x46mmGrenade_Buck</defName>
 			<label>40x46mm grenade (Buck)</label>
 			<graphicData>
-			  <texPath>Things/Ammo/GrenadeLauncher/BS</texPath>
+			  <texPath>ThirdParty/Rimsenal/GrenadeLauncher/BS</texPath>
 			  <graphicClass>Graphic_StackCount</graphicClass>
 			</graphicData>
 			<statBases>
@@ -42,7 +41,7 @@
 			<defName>Ammo_40x46mmGrenade_INC</defName>
 			<label>40x46mm grenade (Incendiary)</label>
 			<graphicData>
-			  <texPath>Things/Ammo/GrenadeLauncher/INC</texPath>
+			  <texPath>ThirdParty/Rimsenal/GrenadeLauncher/INC</texPath>
 			  <graphicClass>Graphic_StackCount</graphicClass>
 			</graphicData>
 			<statBases>

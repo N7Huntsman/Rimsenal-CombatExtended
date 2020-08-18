@@ -15,8 +15,9 @@
 			
 			<!-- ========== Melee Tools  =========== -->
 		  <li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="AD_Negotiator" or
-			defName="ADOriginal_Negotiator" or
+			<xpath>Defs/ThingDef[
+			defName="AD_CruciblePistol" or
+			defName="AD_FedPistol" or
 			defName="AD_AuxPistol"
 			]/tools</xpath>
 			<value>
@@ -47,14 +48,15 @@
 		  </li>
 
 		  <li Class="PatchOperationReplace">
-			<xpath>Defs/ThingDef[defName="AD_Arbiter" or
-			defName="ADOriginal_Arbiter" or
-			defName="AD_Intercessor" or
-			defName="ADOriginal_Intercessor" or			
-			defName="AD_Pacificator" or
-			defName="ADOriginal_Pacificator" or	
-			defName="AD_Axiom" or
-			defName="ADOriginal_Axiom" or 	
+			<xpath>Defs/ThingDef[
+			defName="AD_HeatProjector" or
+			defName="AD_FedHeatCannon" or
+			defName="AD_CruciblePresicionRifle" or
+			defName="AD_FedSniperRifle" or			
+			defName="AD_CrucibleRifle" or
+			defName="AD_FedRifle" or	
+			defName="AD_PlasmaCaliver" or
+			defName="AD_FedPlasmaCaster" or 	
 			defName="AD_CrucibleCarbine" or	
 			defName="Gun_MCrucibleRifle"				
 			]/tools</xpath>
@@ -183,7 +185,7 @@
 
 			<!-- ==========  AD Crucible Rifle  =========== -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>AD_Pacificator</defName>
+			<defName>AD_CrucibleCarbine</defName>
 				<statBases>
 					<WorkToMake>52000</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>
@@ -213,7 +215,7 @@
 			</li>
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>ADOriginal_Pacificator</defName>
+			<defName>AD_FedRifle</defName>
 				<statBases>
 					<WorkToMake>52000</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>
@@ -244,7 +246,7 @@
 			
 			<!-- ==========  AD Crucible Pistol  =========== -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>AD_Negotiator</defName>
+			<defName>AD_CruciblePistol</defName>
 				<statBases>
 					<WorkToMake>30500</WorkToMake>
 					<SightsEfficiency>0.6</SightsEfficiency>
@@ -269,7 +271,7 @@
 			</li>
 			
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>ADOriginal_Negotiator</defName>
+			<defName>AD_FedPistol</defName>
 				<statBases>
 					<WorkToMake>30500</WorkToMake>
 					<SightsEfficiency>0.6</SightsEfficiency>
@@ -295,7 +297,7 @@
 			
 			<!-- ==========  AD Heat Cannon  =========== -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>AD_Arbiter</defName>
+			<defName>AD_HeatProjector</defName>
 				<statBases>
 					<WorkToMake>70500</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>
@@ -327,7 +329,7 @@
 			</li>
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>ADOriginal_Arbiter</defName>
+			<defName>AD_FedHeatCannon</defName>
 				<statBases>
 					<WorkToMake>70500</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>
@@ -360,7 +362,7 @@
 			
 			<!-- ==========  AD Crucible Precision Rifle  =========== -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>AD_Intercessor</defName>
+			<defName>AD_CruciblePresicionRifle</defName>
 				<statBases>
 					<WorkToMake>60500</WorkToMake>
 					<SightsEfficiency>2.60</SightsEfficiency>
@@ -386,7 +388,7 @@
 			</li>
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>ADOriginal_Intercessor</defName>
+			<defName>AD_FedSniperRifle</defName>
 				<statBases>
 					<WorkToMake>60500</WorkToMake>
 					<SightsEfficiency>2.60</SightsEfficiency>
@@ -413,7 +415,7 @@
 			
 			<!-- ==========  AD Plasma Caster  =========== -->
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>AD_Axiom</defName>
+			<defName>AD_PlasmaCaliver</defName>
 				<statBases>
 					<WorkToMake>80500</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>
@@ -445,7 +447,7 @@
 			</li>
 
 			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
-			<defName>ADOriginal_Axiom</defName>
+			<defName>AD_FedPlasmaCaster</defName>
 				<statBases>
 					<WorkToMake>80500</WorkToMake>
 					<SightsEfficiency>1.0</SightsEfficiency>

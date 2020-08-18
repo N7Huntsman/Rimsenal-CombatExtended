@@ -428,7 +428,7 @@
 				<targetParams>
 				  <canTargetLocations>true</canTargetLocations>
 				</targetParams>
-				<soundCast>HissFlamethrowerFeral</soundCast>
+				<soundCast>HissFlamethrower</soundCast>
 				<muzzleFlashScale>0</muzzleFlashScale>
 				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
 				<burstShotCount>20</burstShotCount>
