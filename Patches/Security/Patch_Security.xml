@@ -326,30 +326,20 @@
 				<xpath>Defs/ThingDef[defName="MoltenShell"]</xpath>
 			</li>
 				
-			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="Artillery_MC"]</xpath>
-				<value>
-				  <ThingDef ParentName="BaseTurretGun">
+			<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
 					<defName>Artillery_MC</defName>
-					<label>molten cannon</label>
-					<graphicData>
-					  <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
-					  <graphicClass>Graphic_Single</graphicClass>
-					</graphicData>
-					<description>An enormous cannon that fires a projectile of molten metal. Though less useful against soft targets than conventional artillery and limited to a direct fire role, but definitely more powerful, it is nevertheless the ideal anti-mechanoid cannon, and is extensively employed in the ongoing mechanoid war on Jotunheim Prime. Fires molten shells.</description>
 					<statBases>
 					  <Flammability>1.0</Flammability>
 					  <WorkToMake>31500</WorkToMake>
 					  <Mass>16.5</Mass>
-					  <Bulk>20</Bulk>	
-					  <MarketValue>2000</MarketValue>
+					  <Bulk>20</Bulk>
 					  <SightsEfficiency>2.6</SightsEfficiency>
 					  <ShotSpread>0.04</ShotSpread>
 					  <SwayFactor>0.96</SwayFactor>
 					  <RangedWeapon_Cooldown>3.3</RangedWeapon_Cooldown>
 					</statBases>
-					<verbs>
-					  <li Class="CombatExtended.VerbPropertiesCE">
+					<Properties>
+						<recoilAmount>1.13</recoilAmount>
 						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 						<hasStandardCommand>true</hasStandardCommand>
 						<defaultProjectile>Bullet_MoltenShell</defaultProjectile>
@@ -358,20 +348,18 @@
 						<soundCast>RS_ShotJI</soundCast>
 						<muzzleFlashScale>16</muzzleFlashScale>
 						<recoilPattern>Mounted</recoilPattern>
-					  </li>
-					</verbs>
-					<comps>
-					  <li Class="CombatExtended.CompProperties_AmmoUser">
+					</Properties>
+					<AmmoUser>
 						<magazineSize>1</magazineSize>
 						<reloadTime>8</reloadTime>
 						<ammoSet>AmmoSet_MoltenShell</ammoSet>
-					  </li>
-					  <li Class="CombatExtended.CompProperties_FireModes">
+					</AmmoUser>
+					<FireModes>
 						<aiAimMode>AimedShot</aiAimMode>
-					  </li>
-					</comps>
-				  </ThingDef>				
-				</value>
+					</FireModes>
+					<weaponTags>
+						<li>TurretGun</li>
+					</weaponTags>
 			</li>
 			
 			<!-- ========== Rocket Turret ========== -->
