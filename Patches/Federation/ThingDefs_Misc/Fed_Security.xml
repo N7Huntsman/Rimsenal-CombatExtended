@@ -48,7 +48,7 @@
 					<recoilPattern>Mounted</recoilPattern>
 				</Properties>
 				<FireModes>
-					<aimedBurstShotCount>10</aimedBurstShotCount>
+					<aimedBurstShotCount>5</aimedBurstShotCount>
 					<aiUseBurstMode>TRUE</aiUseBurstMode>
 				</FireModes>
 			</li>
